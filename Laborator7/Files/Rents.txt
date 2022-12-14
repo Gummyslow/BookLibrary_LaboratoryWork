@@ -1,0 +1,9 @@
+1,1,1,Rent
+2,2,2,Rent
+3,1,1,Return
+4,1,4,Rent
+5,1,4,Return
+6,1,5,Rent
+7,5,6,Rent
+8,5,6,Return
+9,5,7,Rent
