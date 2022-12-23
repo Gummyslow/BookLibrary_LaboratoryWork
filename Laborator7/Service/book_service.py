@@ -24,5 +24,5 @@ class BookService:
         return self.__book_repository.sort_book_title()
 
     def delete_by_id_book(self, id):
-        self.__book_repository.delete_by_id_book(id)
+        self.__book_repository.delete_book(id)
 

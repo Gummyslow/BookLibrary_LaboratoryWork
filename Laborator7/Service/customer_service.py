@@ -1,5 +1,6 @@
 from Laborator7.Domain.customer_domain import Customer
 from Laborator7.Repository.customer_repository import CustomerRepository
+from Laborator7.Repository.customer_file_repository import CustomerFileRepository
 
 
 class CustomerService:
@@ -31,4 +32,4 @@ class CustomerService:
         return self.__customer_repository.search_customer(customer)
 
     def delete_by_id_customer(self, id):
-        self.__customer_repository.delete_by_id_customer(id)
+        self.__customer_repository.delete_customer(id)

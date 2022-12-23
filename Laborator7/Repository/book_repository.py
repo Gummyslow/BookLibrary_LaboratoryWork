@@ -13,15 +13,6 @@ class BookRepository:
     def find_book_by_id(self, id):
         return self.__all_books.get(id, None)
 
-    def __find_by_title(self, title):
-        return self.__all_books.get(title, None)
-
-    def __find_by_author(self, author):
-        return self.__all_books.get(author, None)
-
-    def __find_by_publisher(self, publisher):
-        return self.__all_books.get(publisher, None)
-
     def find_book_by_availability(self, id_book, availability):
         for books in self.__all_books:
             if self.__all_books[books].get_id() == id_book:

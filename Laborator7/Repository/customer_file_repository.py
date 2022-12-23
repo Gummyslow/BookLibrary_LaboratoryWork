@@ -1,6 +1,7 @@
 from Laborator7.Domain.customer_domain import Customer
 from Laborator7.Repository.customer_repository import CustomerRepository
 
+
 class CustomerFileRepository(CustomerRepository):
     def __init__(self, file_name):
         super().__init__()

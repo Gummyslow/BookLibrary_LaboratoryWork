@@ -32,15 +32,6 @@ class CustomerRepository:
     def find_customer_by_id(self, id):
         return self.__all_customers.get(id, None)
 
-    def __find_by_first_name(self, first_name):
-        return self.__all_customers.get(first_name, None)
-
-    def __find_by_last_name(self, last_name):
-        return self.__all_customers.get(last_name, None)
-
-    def __find_by_cnp(self, cnp):
-        return self.__all_customers.get(cnp, None)
-
     def find_customer_by_owned(self, id_customer, owns):
         for customers in self.__all_customers:
             if self.__all_customers[customers].get_id() == id_customer:
